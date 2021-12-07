@@ -267,7 +267,7 @@ cmdListLayout.Parent = CMDsF
 
 SettingsButton.Name = "SettingsButton"
 SettingsButton.Parent = Holder
-SettingsButton.BackgroundTransparency = 1
+SettingsButton.BackgroundTransparency = 0.5
 SettingsButton.Position = UDim2.new(0, 230, 0, 0)
 SettingsButton.Size = UDim2.new(0, 20, 0, 20)
 SettingsButton.Image = "rbxassetid://1204397029"
@@ -276,7 +276,7 @@ SettingsButton.ZIndex = 10
 ReferenceButton = Instance.new("ImageButton")
 ReferenceButton.Name = "ReferenceButton"
 ReferenceButton.Parent = Holder
-ReferenceButton.BackgroundTransparency = 1
+ReferenceButton.BackgroundTransparency = 0.5
 ReferenceButton.Position = UDim2.new(0, 212, 0, 2)
 ReferenceButton.Size = UDim2.new(0, 16, 0, 16)
 ReferenceButton.Image = "rbxassetid://3523243755"
@@ -295,7 +295,7 @@ table.insert(shade1,Settings)
 SettingsHolder = Instance.new("ScrollingFrame")
 SettingsHolder.Name = "Holder"
 SettingsHolder.Parent = Settings
-SettingsHolder.BackgroundTransparency = 1
+SettingsHolder.BackgroundTransparency = 0.5
 SettingsHolder.BorderSizePixel = 0
 SettingsHolder.Size = UDim2.new(1,0,1,0)
 SettingsHolder.ScrollBarImageColor3 = Color3.fromRGB(78,78,79)
@@ -312,7 +312,7 @@ Prefix.Name = "Prefix"
 Prefix.Parent = SettingsHolder
 Prefix.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Prefix.BorderSizePixel = 0
-Prefix.BackgroundTransparency = 1
+Prefix.BackgroundTransparency = 0.5
 Prefix.Position = UDim2.new(0, 5, 0, 5)
 Prefix.Size = UDim2.new(1, -10, 0, 20)
 Prefix.Font = Enum.Font.SourceSans
@@ -351,7 +351,7 @@ function makeSettingsButton(name,iconID,off)
 	icon.Parent = button
 	icon.Position = UDim2.new(0,5,0,5)
 	icon.Size = UDim2.new(0,16,0,16)
-	icon.BackgroundTransparency = 1
+	icon.BackgroundTransparency = 0.5
 	icon.Image = iconID
 	icon.ZIndex = 10
 	if off then
@@ -362,7 +362,7 @@ function makeSettingsButton(name,iconID,off)
 	local label = Instance.new("TextLabel")
 	label.Name = "ButtonLabel"
 	label.Parent = button
-	label.BackgroundTransparency = 1
+	label.BackgroundTransparency = 0.5
 	label.Text = name
 	label.Position = UDim2.new(0,28,0,0)
 	label.Size = UDim2.new(1,-28,1,0)
@@ -398,7 +398,7 @@ StayOpen.Name = "StayOpen"
 StayOpen.Parent = SettingsHolder
 StayOpen.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 StayOpen.BorderSizePixel = 0
-StayOpen.BackgroundTransparency = 1
+StayOpen.BackgroundTransparency = 0.5
 StayOpen.Position = UDim2.new(0, 5, 0, 30)
 StayOpen.Size = UDim2.new(1, -10, 0, 20)
 StayOpen.Font = Enum.Font.SourceSans
@@ -422,7 +422,7 @@ table.insert(shade3,Button)
 On.Name = "On"
 On.Parent = Button
 On.BackgroundColor3 = Color3.fromRGB(150, 150, 151)
-On.BackgroundTransparency = 1
+On.BackgroundTransparency = 0.5
 On.BorderSizePixel = 0
 On.Position = UDim2.new(0, 2, 0, 2)
 On.Size = UDim2.new(0, 16, 0, 16)
@@ -452,7 +452,7 @@ Plugins.Parent = SettingsHolder
 
 Example.Name = "Example"
 Example.Parent = Holder
-Example.BackgroundTransparency = 1
+Example.BackgroundTransparency = 0.5
 Example.BorderSizePixel = 0
 Example.Size = UDim2.new(0, 190, 0, 20)
 Example.Visible = false
@@ -488,7 +488,7 @@ table.insert(text1,Title_2)
 
 Text_2.Name = "Text"
 Text_2.Parent = Notification
-Text_2.BackgroundTransparency = 1
+Text_2.BackgroundTransparency = 0.5
 Text_2.BorderSizePixel = 0
 Text_2.Position = UDim2.new(0, 5, 0, 25)
 Text_2.Size = UDim2.new(0, 240, 0, 75)
@@ -502,7 +502,7 @@ table.insert(text1,Text_2)
 
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = Notification
-CloseButton.BackgroundTransparency = 1
+CloseButton.BackgroundTransparency = 0.5
 CloseButton.Position = UDim2.new(1, -20, 0, 0)
 CloseButton.Size = UDim2.new(0, 20, 0, 20)
 CloseButton.Text = ""
@@ -510,7 +510,7 @@ CloseButton.ZIndex = 10
 
 CloseImage.Parent = CloseButton
 CloseImage.BackgroundColor3 = Color3.new(1, 1, 1)
-CloseImage.BackgroundTransparency = 1
+CloseImage.BackgroundTransparency = 0.5
 CloseImage.Position = UDim2.new(0, 5, 0, 5)
 CloseImage.Size = UDim2.new(0, 10, 0, 10)
 CloseImage.Image = "rbxassetid://5054663650"
@@ -518,14 +518,14 @@ CloseImage.ZIndex = 10
 
 PinButton.Name = "PinButton"
 PinButton.Parent = Notification
-PinButton.BackgroundTransparency = 1
+PinButton.BackgroundTransparency = 0.5
 PinButton.Size = UDim2.new(0, 20, 0, 20)
 PinButton.ZIndex = 10
 PinButton.Text = ""
 
 PinImage.Parent = PinButton
 PinImage.BackgroundColor3 = Color3.new(1, 1, 1)
-PinImage.BackgroundTransparency = 1
+PinImage.BackgroundTransparency = 0.5
 PinImage.Position = UDim2.new(0, 3, 0, 3)
 PinImage.Size = UDim2.new(0, 14, 0, 14)
 PinImage.ZIndex = 10
@@ -559,7 +559,7 @@ table.insert(text1,Title_3)
 
 Description.Name = "Description"
 Description.Parent = Tooltip
-Description.BackgroundTransparency = 1
+Description.BackgroundTransparency = 0.5
 Description.BorderSizePixel = 0
 Description.Size = UDim2.new(0,180,0,72)
 Description.Position = UDim2.new(0,10,0,18)
@@ -583,7 +583,7 @@ IntroBackground.ZIndex = 10
 
 Logo.Name = "Logo"
 Logo.Parent = Holder
-Logo.BackgroundTransparency = 1
+Logo.BackgroundTransparency = 0.5
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0, 125, 0, 127)
 Logo.Size = UDim2.new(0, 10, 0, 10)
@@ -593,7 +593,7 @@ Logo.ZIndex = 10
 
 Credits.Name = "Credits"
 Credits.Parent = Holder
-Credits.BackgroundTransparency = 1
+Credits.BackgroundTransparency = 0.5
 Credits.BorderSizePixel = 0
 Credits.Position = UDim2.new(0, 0, 0.9, 30)
 Credits.Size = UDim2.new(0, 250, 0, 20)
@@ -657,7 +657,7 @@ table.insert(text1,Delete)
 
 Holder_2.Name = "Holder"
 Holder_2.Parent = KeybindsFrame
-Holder_2.BackgroundTransparency = 1
+Holder_2.BackgroundTransparency = 0.5
 Holder_2.BorderSizePixel = 0
 Holder_2.Position = UDim2.new(0, 0, 0, 0)
 Holder_2.Size = UDim2.new(0, 250, 0, 145)
@@ -711,7 +711,7 @@ table.insert(text2,Delete_2)
 KeybindEditor.Name = randomString()
 KeybindEditor.Parent = PARENT
 KeybindEditor.Active = true
-KeybindEditor.BackgroundTransparency = 1
+KeybindEditor.BackgroundTransparency = 0.5
 KeybindEditor.Position = UDim2.new(0.5, -180, 0, -500)
 KeybindEditor.Size = UDim2.new(0, 360, 0, 20)
 KeybindEditor.ZIndex = 10
@@ -738,7 +738,7 @@ table.insert(shade2,Dark_4)
 
 Directions.Name = "Directions"
 Directions.Parent = background_2
-Directions.BackgroundTransparency = 1
+Directions.BackgroundTransparency = 0.5
 Directions.BorderSizePixel = 0
 Directions.Position = UDim2.new(0, 10, 0, 15)
 Directions.Size = UDim2.new(0, 115, 0, 90)
@@ -767,7 +767,7 @@ table.insert(text1,BindTo)
 
 BindTrigger = Instance.new("TextLabel")
 BindTrigger.Name = "TriggerLabel"
-BindTrigger.BackgroundTransparency = 1
+BindTrigger.BackgroundTransparency = 0.5
 BindTrigger.Position = UDim2.new(0, 10, 0, 155)
 BindTrigger.Size = UDim2.new(0, 45, 0, 20)
 BindTrigger.Font = Enum.Font.SourceSans
@@ -824,7 +824,7 @@ Cmdbar_2.PlaceholderText = "Command"
 
 Toggles.Name = "Toggles"
 Toggles.Parent = background_2
-Toggles.BackgroundTransparency = 1
+Toggles.BackgroundTransparency = 0.5
 Toggles.BorderSizePixel = 0
 Toggles.Position = UDim2.new(0, 150, 0, 50)
 Toggles.Size = UDim2.new(0, 200, 0, 125)
@@ -1166,7 +1166,7 @@ table.insert(shade2,shadow_2)
 
 PopupText_2.Name = "PopupText"
 PopupText_2.Parent = shadow_2
-PopupText_2.BackgroundTransparency = 1
+PopupText_2.BackgroundTransparency = 0.5
 PopupText_2.Size = UDim2.new(1, 0, 0.95, 0)
 PopupText_2.ZIndex = 10
 PopupText_2.Font = Enum.Font.SourceSans
@@ -1178,7 +1178,7 @@ table.insert(text1,PopupText_2)
 
 Exit_2.Name = "Exit"
 Exit_2.Parent = shadow_2
-Exit_2.BackgroundTransparency = 1
+Exit_2.BackgroundTransparency = 0.5
 Exit_2.Position = UDim2.new(1, -20, 0, 0)
 Exit_2.Size = UDim2.new(0, 20, 0, 20)
 Exit_2.Text = ""
@@ -1186,7 +1186,7 @@ Exit_2.ZIndex = 10
 
 ExitImage_2.Parent = Exit_2
 ExitImage_2.BackgroundColor3 = Color3.new(1, 1, 1)
-ExitImage_2.BackgroundTransparency = 1
+ExitImage_2.BackgroundTransparency = 0.5
 ExitImage_2.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_2.Size = UDim2.new(0, 10, 0, 10)
 ExitImage_2.Image = "rbxassetid://5054663650"
@@ -1246,7 +1246,7 @@ table.insert(text1,Part)
 
 Holder_4.Name = "Holder"
 Holder_4.Parent = PositionsFrame
-Holder_4.BackgroundTransparency = 1
+Holder_4.BackgroundTransparency = 0.5
 Holder_4.BorderSizePixel = 0
 Holder_4.Position = UDim2.new(0, 0, 0, 0)
 Holder_4.Selectable = false
@@ -1353,7 +1353,7 @@ table.insert(text1,Delete_3)
 
 Holder_3.Name = "Holder"
 Holder_3.Parent = AliasesFrame
-Holder_3.BackgroundTransparency = 1
+Holder_3.BackgroundTransparency = 0.5
 Holder_3.BorderSizePixel = 0
 Holder_3.Position = UDim2.new(0, 0, 0, 0)
 Holder_3.Size = UDim2.new(0, 250, 0, 145)
