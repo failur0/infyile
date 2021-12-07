@@ -235,7 +235,7 @@ table.insert(shade1,Dark)
 
 Cmdbar.Name = "Cmdbar"
 Cmdbar.Parent = Holder
-Cmdbar.BackgroundTransparency = 1
+Cmdbar.BackgroundTransparency = 0.5
 Cmdbar.BorderSizePixel = 0
 Cmdbar.Position = UDim2.new(0, 5, 0, 20)
 Cmdbar.Size = UDim2.new(0, 240, 0, 25)
@@ -249,7 +249,7 @@ Cmdbar.PlaceholderText = "Command Bar"
 
 CMDsF.Name = "CMDs"
 CMDsF.Parent = Holder
-CMDsF.BackgroundTransparency = 1
+CMDsF.BackgroundTransparency = 0.5
 CMDsF.BorderSizePixel = 0
 CMDsF.Position = UDim2.new(0, 5, 0, 45)
 CMDsF.Size = UDim2.new(0, 245, 0, 175)
